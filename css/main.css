@@ -203,7 +203,7 @@ header hgroup {
     z-index: 3;
     top: 0;
     left: 0;
-    background-color: var(--color-orange);
+    background-color: #d5efa8;
     overflow-x: hidden;
     transition: 0.5s;
     box-shadow: 1px 0 2px rgba(0, 0, 0, 0.5);
@@ -239,7 +239,7 @@ header hgroup {
 
 .nav-indice::before {
     content: "Menu";
-    color: #fff;
+    color: #0c486c;
     font-size: 24px;
     margin: 0;
     padding: 0 16px;
@@ -257,7 +257,7 @@ header hgroup {
     padding: 6px 16px;
     text-decoration: none;
     font-size: 14px;
-    color: #fff;
+    color: #0c486c;
     display: block;
     transition: 0.3s;
 }
@@ -269,7 +269,7 @@ header hgroup {
 
 .nav-indice-lista a:hover, .nav-indice-lista a.active {
     background-color: var(--color-blue1);
-    color: var(--color-orange);
+    color: white;
 }
 
 .nav-indice-lista ol {
@@ -310,7 +310,7 @@ header hgroup {
     right: 20px;
     font-size: 36px;
     text-decoration: none;
-    color: #fff;
+    color: #0c486c;
     margin: 0;
     padding: 0;
     line-height: 56px;
