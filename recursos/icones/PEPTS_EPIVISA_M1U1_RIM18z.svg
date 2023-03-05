@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 90" width="113" height="90">
+	<title>Captura de Tela 2023-03-04 às 18</title>
+	<defs>
+		<image  width="113" height="90" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAABaCAMAAAC4y0kXAAAAAXNSR0IB2cksfwAAAYBQTFRF////7fH05Oru4ejsRWmE9ff4IEdpYH+X/f39gZqtpbfEI0prxtLaLlRz3uXpPmOA8PP1V3iQ+/z8eJOnnbC+IklqvsvVKlFx2ODlOV987PDzUHKL+fr7bougkqe3tcPPJ05v0tvhNFp45+zwSGyG9vj5ZYOa/v7+iJ+xrLzJJUxtytXcL1Z14ujsQWaC8/X3XHyUfZeqorTCIklrw8/XLFNy3OPoPGF+7vL0U3WO+vv8c4+kmKy7IUhqucfSKVBw1t7kN1166+/yTW+J+Pn6aYedjaS0ssHNJk1uztjfMlh35erudpGlPmJ/LVNzxdHZpLbDgJmsXn6WQ2iD9Pb4MFd24+ntzNferr7KiqGyZ4WcSm2I9/n6NVt56e3x09zit8XQlaq5cY2iUXOMOmB9K1Jy2uLmwM3WnrG/eZSoWXmR/Pz9QGWB8vT2LlV03+bqJEtsyNPbqLnGhJ2vYoGYRmqFM1l35uvvz9ngjqW1aoieTnCK19/kusjSdJCkVHaPi3WiEgAAAIB0Uk5TACCw4P8A//8A/////////wD/AP////////8w/wD///////+A/wD/AP//////0P8A//////////8Q/wD/////////QP8A////////oP//////////AP/A//////8A/2D///////////////8A/wD///////////+Q//////////8QSE9zAAABtUlEQVR4nL3aWVMTQRiF4YHAIRBZBWQngBBFFiGIEIhhJ8i+CLLvu4CiLAroX6eoMqQySRVcTL/f9Vf9XMx095metizHKinZubGeV66UVFpUmpsWlY6LysBFzwtaVGYWLSo7hxaVm0eLeomLysfFgkJa1KsiWlRxCS2qtIwWVY6LqsBFVeKit4oWVV1Di3pdm7DP3uZk1floUW9wUW9xsf4dLaqhkRbV1EyLem+PzcZFteCiWnHR30aL+tBOi/rYQYvqDNCiunBR3bgY/ESLCvXQonr7aFH9A7SoQVzUEC5qGBfDI7Soz6O0qDFaHM+BxYks+Dl6Jul3dYqej9P0mjPjhsXZOXjv+DIP74/1C3QG+ErnnEU6yy35YHF5Bc7kq2vwd4d33WLF4IYFi5sWLG5ZsLgdgMWdJDtoWNzdiwPNiv79eNCseJAANCoeJgIdrLgz5KNjWPx2Yhi0i6dnpkGb+P2HcdAmnpsHY8WfABgj/kr438GgeMHc8IiKl1cIGBXD1wwYFYch8FH8TYER8Q8G/hdvBmAxcsCIiaFbEHwQg3ck+CB2P93lrPiXBS3Xv2fdBboHA0mgGxbaOzwAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

@@ -1,0 +1,191 @@
+<style>
+    li {
+        margin-bottom: 12px;
+        margin-left: 18px;
+    }
+
+    .questao:hover {
+        background-color: #FAC900;
+        cursor: pointer;
+    }
+
+    .marcado {
+        background-color: #FAC900;
+    }
+
+    .opWrong {
+        opacity: 0.5;
+    }
+
+    .submeter {
+        margin: 1em auto;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 3px;
+        background-color: #2f5579;
+        border: solid 0 transparent;
+        outline: none;
+        box-shadow: 0 .1em rgba(0, 0, 0, .5);
+        padding: .5em;
+        display: block;
+        width: 50%;
+        cursor: pointer;
+        text-align: center;
+    }
+</style>
+<div class="largura-1_1">
+    <img src="recursos/imgs/PEPTS_EPIVISA_M1U1_RIM03_1.svg" style="width: 100%;margin-top: 10px;">
+</div>
+<div class="coluna-direita largura-1_1">
+    <div style="display: flex;justify-content: space-around;align-items: center;height: 380px;">
+        <div style="
+    width: 507px;
+">
+            <h1>EXERCÍCIO DE FIXAÇÃO</h1>
+            <p>1. Nas últimas décadas, tem sido observada uma intensificação na ocorrência de
+                emergências de saúde pública, o que impulsionou a revisão do Regulamento Sanitário
+                Internacional em 2005.</p>
+            <p>Referente ao conceito de emergência de saúde pública e à sua aplicação, sabe-se que:</p>
+            <div style="
+    margin-left: 20px;
+">
+                <p>a) No contexto do RSI, o termo emergência de saúde pública é aplicado para descrever
+                    surtos e epidemias de ocorrência sazonal que não requerem colaboração internacional.<br>
+                    b) O conceito surgiu na literatura mundial com a aprovação do RSI, em 2005, para
+                    facilitar a detecção e a notificação de eventos que poderiam implicar disseminação
+                    internacional de doenças.<br>
+                    c) Uma das contribuições para a saúde pública mundial na utilização desse conceito é
+                    que tem propiciado a detecção precoce de eventos que podem ser disseminados
+                    globalmente.<br>
+                    d) Os eventos de natureza radionuclear não estão inseridos no escopo do RSI, pois são
+                    objeto de outra convenção internacional.<br>
+                    e) A ocorrência das emergências de saúde pública está relacionada ao aumento na
+                    proliferação de vetores nas regiões subtropicais decorrentes da diminuição da média
+                    das temperaturas nessas regiões.</p>
+            </div>
+            <p>É correto o que se afirma em:</p>
+        </div>
+        <div>
+            <p class="questao" id="opc_c">Verdadeira</p>
+            <p class="questao" id="opc_e">Falsa</p>
+        </div>
+    </div>
+
+
+    <div class="submeter" style="width: 20%; margin-top: -60px; display: none;">Submeter</div>
+    <div style="position: absolute; width: 500px; left: 21%; top: 28%; height: 150px; display: none;" id="feedCerto">
+        <div class="objetivo animate__animated animate__pulse">
+            <div>
+
+                <div class="box-click" style="width:468px; margin: 0;">
+                    <div class="line-box">
+                        <div style="margin-left: 20px;">
+                            <h1>Resposta correta</h1>
+                            <p style="margin-top: 15px;">
+                                A afirmativa é verdadeira! Os postos de vigilância sanitária em portos, aeroportos
+                                e fronteiras são responsáveis pela execução das atividades de controle sanitário
+                                em meios de transportes, viajantes, infraestrutura, produtos importados e
+                                exportados, serviços e bens produzidos, bem como a vigilância epidemiológica e o
+                                controle de vetores em portos, aeroportos, fronteiras, terminais de passageiros e
+                                cargas e estações aduaneiras correlacionadas, em articulação com os órgãos de
+                                saúde dos níveis estadual e municipal e com outros órgãos federais. Mais
+                                informações na página da Anvisa/GGPAF.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-fechar">
+                        <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; width: 500px; left: 21%; top: 27%; height: 150px; display: none;" id="feedErrado">
+        <div class="objetivo animate__animated animate__pulse">
+            <div>
+
+                <div class="box-click" style="width:468px; margin: 0;">
+                    <div class="line-box">
+                        <div style="margin-left: 20px;">
+                            <h1>Resposta incorreta</h1>
+                            <p style="margin-top: 15px;">
+                                Você não marcou a alternativa correta. Veja que o controle sanitário de
+                                portos, aeroportos, fronteiras e recintos alfandegados, de serviços de saúde
+                                e de produtos (medicamentos, cosméticos, saneantes, alimentos, derivados
+                                do tabaco, produtos médicos, sangue e hemoderivados, entre outros) é uma
+                                dentre as várias responsabilidades da Anvisa. Você pode retornar ao
+                                conteúdo de responsabilidades da Anvisa disponível em nossa aula.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-fechar">
+                        <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<footer style="padding: 0; height: 40px;">
+    <img src="recursos/imgs/PEPTS_EPIVISA_M1U1_RIM03_2.svg" style="width: 100%;">
+</footer>
+<script>
+    $(() => {
+        let resposta = '';
+        let mostrarSub = true;
+        let feedCerto = $(document).find('[id^=feedCerto]').hide();
+        let feedErrado = $(document).find('[id^=feedErrado]').hide();
+        let submeter = $(document).find('[class=submeter]').hide();
+
+        $(feedCerto).on('click', apagarFeeds);
+        $(feedErrado).on('click', apagarFeeds);
+
+        function apagarFeeds() {
+            feedCerto.fadeOut();
+            feedErrado.fadeOut();
+        }
+
+        function desmarcarTudo() {
+            let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                $(sel).removeClass("marcado");
+            })
+        }
+
+        let questao = $(document).find('[id^=opc]').map((index, sel) => {
+            $(sel).click(() => {
+                console.log(sel.id);
+                resposta = sel.id;
+                if (mostrarSub) {
+                    submeter.fadeIn();
+                }
+
+                desmarcarTudo();
+                $(sel).addClass("marcado");
+            })
+        })
+
+
+        $(submeter).on('click', () => {
+            console.log("clicou " + resposta.split("_")[1]);
+            if (resposta.split("_")[1] == "c") {
+                $(feedCerto).fadeIn();
+                pontos += 1;
+                mostrarSub = false;
+                submeter.hide();
+
+                // opacidade das questões erradas e marcação da questão certa
+
+                let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                    $(sel).removeClass("questao").css("pointer-events", "none");
+
+                    let opacityWrong = $(document).find('[id^=opc_e]').addClass('opWrong');
+
+                })
+            } else {
+                $(feedErrado).fadeIn();
+            }
+        })
+    })
+</script>
