@@ -26,7 +26,9 @@
                         CIEVS
                         nacional. É a partir dessas notificações que o CIEVS nacional fará a aplicação do
                         instrumento de
-                        decisão contido no Anexo 2 do RSI e definirá se o evento deve ou não ser informado à OMS.
+                        decisão contido no <span id="hotWord-bt_1"
+                            style="background-color: var(--color-blue6); color: white;">Anexo 2 do RSI</span>
+                        e definirá se o evento deve ou não ser informado à OMS.
                     </p>
                 </div>
             </div>
@@ -36,3 +38,21 @@
 <footer style="padding: 0; height: 40px;">
     <img src="recursos/imgs/PEPTS_EPIVISA_M1U1_RIM03_2.svg" style="width: 100%;">
 </footer>
+<div id="conteudo_1"
+    style="position: absolute;top: 269px;left: 180px;width: 355px;height: 60px;background: 0% 0% no-repeat padding-box padding-box rgb(201, 238, 149);display: flex;align-items: center;justify-content: center;padding: 10px;">
+    <p style="color: #0c486c;">Apresenta um algoritmo de decisão para avaliação de risco de cada evento que tenha
+        potencial de disseminação internacional. </p>
+</div>
+<script>
+    $(() => {
+        let conteudo = $(document).find('[id^=conteudo]').hide();
+        let botoes = $(document).find('[id^=hotWord-bt]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer').hover(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeIn();
+            })
+            $(botao).mouseout(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeOut()
+            })
+        })
+    })
+</script>

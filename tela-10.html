@@ -6,16 +6,38 @@
     <div style="width: 82%;">
         <p>Note que o enfoque passa a ser, portanto, a detecção de situações de risco que podem vir a implicar a
             ocorrência de danos à
-            saúde da população, por meio da disseminação internacional de doenças ou agravos. Isso significa que, além
+            saúde da população, por meio da disseminação internacional de doenças ou agravos. Isso significa que,
+            além
             das epidemias e
             pandemias de doenças infecciosas, os eventos de natureza química, nuclear ou desastres, mesmo antes da
             produção de
             casos ou mortes, podem representar uma ESPII.</p>
-        <p>Para apoiar a avaliação de risco de cada evento que tenha potencial de disseminação internacional, o RSI 2005
+        <p>Para apoiar a avaliação de risco de cada evento que tenha potencial de disseminação internacional, o RSI
+            2005
             traz também
-            um instrumento de decisão (Anexo 2 do RSI 2005), conforme os dois esquemas apresentados a seguir.</p>
+            um instrumento de decisão <span id="hotWord-bt_1"
+                style="background-color: rgb(201, 238, 149); color: rgb(12, 72, 108);">(Anexo 2 do RSI 2005)</span>,
+            conforme os dois esquemas apresentados a seguir.</p>
     </div>
 </div>
 <footer style="padding: 0; height: 40px;">
     <img src="recursos/imgs/PEPTS_EPIVISA_M1U1_RIM03_2.svg" style="width: 100%;">
 </footer>
+<div id="conteudo_1"
+    style="position: absolute;top: 325px;left: 120px;width: 355px;height: 60px;background: 0% 0% no-repeat padding-box padding-box rgb(201, 238, 149);display: flex;align-items: center;justify-content: center;padding: 10px;">
+    <p style="color: #0c486c;">Apresenta um algoritmo de decisão para avaliação de risco de cada evento que tenha
+        potencial de disseminação internacional. </p>
+</div>
+<script>
+    $(() => {
+        let conteudo = $(document).find('[id^=conteudo]').hide();
+        let botoes = $(document).find('[id^=hotWord-bt]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer').hover(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeIn();
+            })
+            $(botao).mouseout(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeOut()
+            })
+        })
+    })
+</script>

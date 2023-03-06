@@ -11,8 +11,11 @@
         <p>O Regulamento Sanitário Internacional foi
             criado para o fortalecimento das capacidades
             global e nacionais no enfrentamento de
-            epidemias, pandemias e outros eventos de
-            saúde pública que impactam a saúde da
+            epidemias, pandemias e outros <span id="hotWord-bt_1"
+                style="background-color: rgb(201, 238, 149); color: rgb(12, 72, 108);">
+                eventos de
+                saúde pública
+            </span> que impactam a saúde da
             população mundial.</p>
     </div>
     <div class="animate__animated animate__backInUp">
@@ -29,3 +32,21 @@
 <footer style="padding: 0; height: 40px;">
     <img src="recursos/imgs/PEPTS_EPIVISA_M1U1_RIM03_2.svg" style="width: 100%;">
 </footer>
+<div id="conteudo_1"
+    style="position: absolute;top: 235px;left: 10px;width: 355px;height: 60px;background: 0% 0% no-repeat padding-box padding-box rgb(201, 238, 149);display: flex;align-items: center;justify-content: center;padding: 10px;">
+    <p style="color: #0c486c;">Evento de saúde pública : “Manifestação de doença ou uma ocorrência que apresente
+        potencial para causar doença” (Anvisa, 2009. p. 15).</p>
+</div>
+<script>
+    $(() => {
+        let conteudo = $(document).find('[id^=conteudo]').hide();
+        let botoes = $(document).find('[id^=hotWord-bt]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer').hover(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeIn();
+            })
+            $(botao).mouseout(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeOut()
+            })
+        })
+    })
+</script>

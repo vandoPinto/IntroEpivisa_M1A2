@@ -7,7 +7,9 @@
         <p>Portanto, a partir da detecção e análise de eventos que ocorrem no território nacional, quando este
             preenche
             os critérios
-            referidos anteriormente, o Ponto Focal Nacional (PFN) do RSI estabelece a comunicação com a OMS, por
+            referidos anteriormente, o <span id="hotWord-bt_1"
+                style="background-color: rgb(201, 238, 149); color: rgb(12, 72, 108);">Ponto Focal Nacional (PFN)</span>
+            do RSI estabelece a comunicação com a OMS, por
             meio da
             representação regional. No caso do Brasil, assim como nos demais países das Américas, essa representação
             é a
@@ -46,3 +48,22 @@
 <footer style="padding: 0; height: 40px;">
     <img src="recursos/imgs/PEPTS_EPIVISA_M1U1_RIM03_2.svg" style="width: 100%;">
 </footer>
+<div id="conteudo_1"
+    style="position: absolute;top: 155px;left: 150px;width: 355px;height: 60px;background: 0% 0% no-repeat padding-box padding-box rgb(201, 238, 149);display: flex;align-items: center;justify-content: center;padding: 10px;">
+    <p style="color: #0c486c;">Ente nacional, no caso do Brasil, a Secretaria de Vigilância em saúde e ambiente (SVSA)
+        do Ministério da Saúde, por meio do Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS) realiza a
+        interlocução com a OMS.</p>
+</div>
+<script>
+    $(() => {
+        let conteudo = $(document).find('[id^=conteudo]').hide();
+        let botoes = $(document).find('[id^=hotWord-bt]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer').hover(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeIn();
+            })
+            $(botao).mouseout(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeOut()
+            })
+        })
+    })
+</script>

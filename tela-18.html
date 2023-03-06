@@ -13,7 +13,7 @@
             Saúde (CIEVS/MS), e a implementação da
             Rede de Alerta e Resposta às Emergências
             em Saúde Pública em 2005 e 2006
-            (CARMO et al., 2008).</p>
+            (CARMO <i>et al.</i>, 2008).</p>
     </div>
     <div class="animate__animated animate__backInUp">
         <img src="recursos/imgs/PEPTS_EPIVISA_M1U2_RIM06.png" style="width: 300px;">
@@ -22,8 +22,9 @@
         <p>Atualmente, a rede denomina-se Rede
             Nacional de Vigilância, Alerta e Resposta às
             Emergências em Saúde Pública no âmbito
-            do Sistema Único de Saúde (Rede
-            VigiAR-SUS), composta também por mais
+            do Sistema Único de Saúde <span id="hotWord-bt_1"
+                style="background-color: rgb(201, 238, 149); color: rgb(12, 72, 108);">(Rede VigiAR-SUS)</span>,
+            composta também por mais
             de 130 unidades nos estados, da qual a
             Anvisa faz parte desde o início de seu
             funcionamento (BRASIL, 2022).</p>
@@ -32,3 +33,21 @@
 <footer style="padding: 0; height: 40px;">
     <img src="recursos/imgs/PEPTS_EPIVISA_M1U1_RIM03_2.svg" style="width: 100%;">
 </footer>
+<div id="conteudo_1"
+    style="position: absolute;top: 289px;left: 508px;width: 355px;height: 60px;background: 0% 0% no-repeat padding-box padding-box rgb(201, 238, 149);display: flex;align-items: center;justify-content: center;padding: 10px;">
+    <p style="color: #0c486c;">Rede Nacional de Vigilância, Alerta e Resposta às emergências em saúde pública no âmbito
+        do Sistema Único de Saúde, composta por 130 unidades nos estados, na qual a ANVISA faz parte.</p>
+</div>
+<script>
+    $(() => {
+        let conteudo = $(document).find('[id^=conteudo]').hide();
+        let botoes = $(document).find('[id^=hotWord-bt]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer').hover(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeIn();
+            })
+            $(botao).mouseout(() => {
+                $(document).find(`[id=conteudo_${index + 1}]`).fadeOut()
+            })
+        })
+    })
+</script>
